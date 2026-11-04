@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 18th Birthday Zohra Anam ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --pink: #ff7eae;
+  --deep: #542044;
+  --gold: #ffd98b;
+  --cream: #fff4f8;
+  --purple: #9c6bba;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background:
+    radial-gradient(ellipse at 15% 15%, #9e548b 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 80%, #b66b9c 0%, transparent 45%),
+    linear-gradient(135deg, #30152f, #62264d, #371b42);
+}
+
+button { font-family: inherit; }
+
+#particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.heart-particle {
+  position: absolute;
+  bottom: -40px;
+  animation: floatUp linear forwards;
+  opacity: .7;
+}
+
+@keyframes floatUp {
+  to { transform: translateY(-115vh) rotate(360deg); opacity: 0; }
+}
+
+.screen {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.hidden { display: none !important; }
+
+.eyebrow {
+  color: var(--gold);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.script {
+  font-family: 'Great Vibes', cursive;
+  color: #ffd6e6;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.hero {
+  width: min(760px, 100%);
+  padding: 55px 25px;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 35px;
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(16px);
+  box-shadow: 0 25px 90px rgba(0,0,0,.25);
+  animation: appear 1.2s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(35px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.crown {
+  font-size: 45px;
+  margin-bottom: 12px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  50% { transform: translateY(-10px) rotate(5deg); }
+}
+
+.hero .script {
+  font-size: clamp(45px, 9vw, 85px);
+  line-height: 1.2;
+}
+
+.hero h1 {
+  font-size: clamp(29px, 6vw, 58px);
+  margin: 10px 0;
+  color: white;
+}
+
+.hero h1 span {
+  color: var(--gold);
+}
+
+.hero p {
+  max-width: 510px;
+  margin: 18px auto 30px;
+  color: #f9e8f1;
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+.btn {
+  border: none;
+  border-radius: 50px;
+  padding: 15px 28px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: .3s;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 10px 30px rgba(255,126,174,.3);
+}
+
+.primary {
+  color: #52203e;
+  background: linear-gradient(120deg, #ffe2a7, #ffb6d1);
+}
+
+.secondary {
+  color: white;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.3);
+}
+
+.big-heart {
+  font-size: 48px;
+  margin: 15px;
+  animation: heartbeat 1.3s infinite;
+}
+
+@keyframes heartbeat {
+  50% { transform: scale(1.2); }
+}
+
+#celebration {
+  padding-top: 65px;
+}
+
+.main-title {
+  font-size: clamp(37px, 8vw, 75px);
+  margin: 12px 0;
+  color: #ffe2b0;
+  text-shadow: 0 5px 30px rgba(255,196,140,.25);
+}
+
+.name-title {
+  font-family: 'Great Vibes', cursive;
+  color: #ffc1dd;
+  font-size: clamp(45px, 10vw, 90px);
+  margin: 8px 0;
+}
+
+.subtitle {
+  color: #f9e2f0;
+  font-size: 14px;
+  line-height: 1.9;
+  max-width: 560px;
+}
+
+.cake {
+  font-size: 85px;
+  margin: 20px;
+  animation: cakeFloat 3s ease-in-out infinite;
+}
+
+@keyframes cakeFloat {
+  50% { transform: translateY(-12px); }
+}
+
+.age {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(90px, 18vw, 155px);
+  font-weight: 700;
+  color: transparent;
+  background: linear-gradient(120deg, #fff1b7, #ff9bc8, #fff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  line-height: 1.2;
+}
+
+.section-heading {
+  font-family: 'Great Vibes', cursive;
+  font-size: 55px;
+  color: #ffd2e4;
+  margin: 35px 0 20px;
+}
+
+.surprise-grid {
+  width: min(850px, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin: 25px auto;
+}
+
+.surprise-card {
+  min-height: 150px;
+  padding: 24px 15px;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 22px;
+  background: rgba(255,255,255,.09);
+  color: white;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.surprise-card:hover {
+  background: rgba(255,255,255,.17);
+  transform: translateY(-7px);
+  border-color: var(--gold);
+}
+
+.surprise-card .emoji {
+  font-size: 35px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.surprise-card h3 {
+  font-size: 17px;
+  margin-bottom: 6px;
+}
+
+.surprise-card p {
+  font-size: 11px;
+  color: #f5dce9;
+}
+
+.message-box {
+  display: none;
+  width: min(650px, 100%);
+  margin: 15px auto;
+  padding: 30px 25px;
+  border: 1px solid rgba(255,217,139,.5);
+  border-radius: 25px;
+  background: rgba(255,255,255,.12);
+  animation: appear .5s ease;
+}
+
+.message-box.show { display: block; }
+
+.message-box h2 {
+  color: var(--gold);
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.message-box p {
+  font-size: 14px;
+  color: #fff0f7;
+  line-height: 2;
+}
+
+.letter {
+  width: min(700px, 100%);
+  padding: 38px 27px;
+  margin: 20px auto;
+  border-radius: 25px;
+  background: linear-gradient(140deg, #fff2e9, #ffe0ed);
+  color: #572b47;
+  box-shadow: 0 20px 65px rgba(0,0,0,.2);
+  text-align: left;
+  line-height: 2;
+}
+
+.letter h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #9c426c;
+  margin-bottom: 22px;
+}
+
+.letter p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.letter .signature {
+  text-align: right;
+  font-family: 'Great Vibes', cursive;
+  font-size: 37px;
+  color: #a34476;
+  margin-top: 25px;
+}
+
+.wish-box {
+  width: min(600px, 100%);
+  padding: 30px;
+  border-radius: 25px;
+  border: 1px solid rgba(255,255,255,.2);
+  background: rgba(255,255,255,.09);
+  margin: 20px auto;
+}
+
+.wish-box p {
+  line-height: 2;
+  font-size: 14px;
+}
+
+footer {
+  padding: 35px 15px;
+  color: #eecbdc;
+  font-size: 11px;
+  text-align: center;
+}
+
+.confetti {
+  position: fixed;
+  top: -20px;
+  z-index: 10;
+  pointer-events: none;
+  animation: confettiFall linear forwards;
+}
+
+@keyframes confettiFall {
+  to { transform: translateY(110vh) rotate(900deg); opacity: .1; }
+}
+
+#toast {
+  position: fixed;
+  z-index: 20;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: #fff0f7;
+  color: #682d50;
+  border-radius: 50px;
+  padding: 13px 24px;
+  font-size: 13px;
+  transition: .4s;
+  width: max-content;
+  max-width: 90%;
+}
+
+#toast.show { transform: translateX(-50%) translateY(0); }
+
+.end-heart {
+  font-size: 60px;
+  margin: 15px;
+}
+
+@media(max-width:550px) {
+  .surprise-grid { grid-template-columns: 1fr; }
+  .hero { padding: 40px 20px; }
+  .letter { padding: 25px 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles"></div>
+<div id="toast"></div>
+
+<!-- WELCOME SCREEN -->
+<section class="screen" id="welcome">
+  <div class="hero">
+    <div class="crown">👑</div>
+    <div class="eyebrow">A little surprise made with love</div>
+    <div class="script">For someone special</div>
+
+    <h1>Happy Birthday<br><span>Zohra Anam</span></h1>
+
+    <div class="big-heart">💗</div>
+
+    <p>
+      Today isn't just another day.
+      It's the day someone incredibly special came into this world.
+      And I have prepared something just for you...
+    </p>
+
+    <button class="btn primary" onclick="startBirthday()">
+      Open Your Birthday Surprise 💌
+    </button>
+  </div>
+</section>
+
+
+<!-- MAIN CELEBRATION -->
+<section class="screen hidden" id="celebration">
+
+  <div class="eyebrow">Today the world celebrates YOU</div>
+
+  <div class="cake">🎂</div>
+
+  <div class="main-title">Happy 18th Birthday</div>
+
+  <div class="name-title">Zohra Anam</div>
+
+  <div class="age">18</div>
+
+  <p class="subtitle">
+    Eighteen years of beautiful existence.
+    A new chapter, a thousand dreams,
+    and countless beautiful memories waiting to be made.
+  </p>
+
+  <div style="margin-top:30px">
+    <button class="btn primary" onclick="celebrate()">
+      Let's Celebrate! 🎉
+    </button>
+  </div>
+
+  <div class="section-heading">A little something for you...</div>
+
+  <p class="subtitle">
+    Don't leave just yet! I have a few surprises waiting for you.
+    Click each one. ❤️
+  </p>
+
+  <div class="surprise-grid">
+
+    <button class="surprise-card" onclick="showMessage(1)">
+      <span class="emoji">🌷</span>
+      <h3>Why You're Special</h3>
+      <p>A little reminder of how amazing you are</p>
+    </button>
+
+    <button class="surprise-card" onclick="showMessage(2)">
+      <span class="emoji">💌</span>
+      <h3>A Little Love Note</h3>
+      <p>Something straight from my heart</p>
+    </button>
+
+    <button class="surprise-card" onclick="showMessage(3)">
+      <span class="emoji">✨</span>
+      <h3>Your Birthday Wishes</h3>
+      <p>All the happiness you deserve</p>
+    </button>
+
+    <button class="surprise-card" onclick="showMessage(4)">
+      <span class="emoji">🎀</span>
+      <h3>One Little Promise</h3>
+      <p>A special promise for your new chapter</p>
+    </button>
+
+    <button class="surprise-card" onclick="showMessage(5)">
+      <span class="emoji">🦋</span>
+      <h3>18 Reasons to Smile</h3>
+      <p>Open for a little happiness</p>
+    </button>
+
+    <button class="surprise-card" onclick="showMessage(6)">
+      <span class="emoji">🎁</span>
+      <h3>The Final Surprise</h3>
+      <p>Something you should never forget</p>
+    </button>
+
+  </div>
+
+  <div class="message-box" id="messageBox">
+    <h2 id="messageTitle"></h2>
+    <p id="messageText"></p>
+  </div>
+
+  <div class="section-heading">A letter for you 💗</div>
+
+  <div class="letter">
+    <h2>Dear Zohra Anam, ❤️</h2>
+
+    <p>
+      First of all, a very, very happy 18th birthday to you!
+      🥹🎂
+    </p>
+
+    <p>
+      Today is your day, and I genuinely hope you understand
+      just how special you are. You deserve a life filled with
+      happiness, beautiful surprises, genuine smiles and
+      everything your heart wishes for.
+    </p>
+
+    <p>
+      Eighteen is a beautiful milestone. You're stepping into
+      a new chapter of life, full of dreams, opportunities,
+      adventures and memories waiting to happen.
+    </p>
+
+    <p>
+      I hope you never stop believing in yourself. Never let
+      the world take away your beautiful smile. Keep dreaming
+      big, keep growing, and keep being the wonderful person
+      you are.
+    </p>
+
+    <p>
+      May every difficult day make you stronger, every happy
+      moment become a beautiful memory, and every dream slowly
+      turn into reality.
+    </p>
+
+    <p>
+      And most importantly, I hope today reminds you that
+      someone took the time to create this little corner of
+      the internet just to make you smile. ❤️
+    </p>
+
+    <p>
+      You deserve all the love, laughter and magic in the world.
+      Have the most beautiful 18th birthday ever!
+    </p>
+
+    <div class="signature">With lots of love ❤️</div>
+  </div>
+
+  <div class="wish-box">
+    <div class="end-heart">💝</div>
+    <h2 class="script" style="font-size:45px">
+      One Last Thing...
+    </h2>
+
+    <p style="margin:15px 0">
+      No matter how old you get, never lose the little
+      happiness inside you. Keep shining, keep smiling
+      and keep being YOU.
+    </p>
+
+    <h2 style="color:#ffd98b; margin:20px 0">
+      Happy 18th Birthday, Zohra! 🎂
+    </h2>
+
+    <button class="btn primary" onclick="celebrate()">
+      More Birthday Magic ✨
+    </button>
+  </div>
+
+  <footer>
+    Made with ❤️ just for Zohra Anam
+    <br><br>
+    A little website. A lot of feelings.
+  </footer>
+
+</section>
+
+<script>
+
+// =====================================
+// BIRTHDAY SURPRISE MESSAGES
+// =====================================
+
+const messages = {
+  1: {
+    title: "You Are One of a Kind 🌷",
+    text: "Your smile, your personality, your little quirks and the way you make ordinary moments feel special. Never underestimate how wonderful you are. The world is a little brighter with you in it. ❤️"
+  },
+
+  2: {
+    title: "A Note From My Heart 💌",
+    text: "I might not always have the perfect words, but I hope you always know that you matter. I hope this little surprise brings the biggest smile to your face. You deserve to feel special, today and every day."
+  },
+
+  3: {
+    title: "My Wishes For You ✨",
+    text: "May your 18th year bring endless happiness, exciting adventures, success in everything you work for, peaceful nights, unforgettable memories and people who genuinely care about you. May every wish you make find its way to reality."
+  },
+
+  4: {
+    title: "A Little Promise 🎀",
+    text: "I promise to keep reminding you how amazing you are whenever you forget. I hope you never feel that you have to hide your feelings, dreams or beautiful personality. Always be yourself."
+  },
+
+  5: {
+    title: "18 Reasons to Smile 🦋",
+    text: "1. Your beautiful smile. 2. Your kindness. 3. Your dreams. 4. Your courage. 5. Your laugh. 6. Your uniqueness. 7. Your heart. 8. Your strength. 9. Your personality. 10. Your creativity. 11. Your little habits. 12. Your energy. 13. Your ambition. 14. Your honesty. 15. Your warmth. 16. Your growth. 17. Your existence. 18. Simply because you're YOU. ❤️"
+  },
+
+  6: {
+    title: "The Final Surprise 🎁",
+    text: "Here's something I want you to remember: You are worthy of every beautiful thing life has to offer. Never settle for less than happiness, respect and genuine love. Keep shining, birthday girl. This world is waiting for your magic. 💗"
+  }
+};
+
+
+// =====================================
+// START THE BIRTHDAY
+// =====================================
+
+function startBirthday() {
+  document.getElementById("welcome").classList.add("hidden");
+
+  document.getElementById("celebration")
+    .classList.remove("hidden");
+
+  celebrate();
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+
+// =====================================
+// SHOW INTERACTIVE MESSAGES
+// =====================================
+
+function showMessage(number) {
+  const msg = messages[number];
+
+  document.getElementById("messageTitle").innerText =
+    msg.title;
+
+  document.getElementById("messageText").innerText =
+    msg.text;
+
+  const box = document.getElementById("messageBox");
+
+  box.classList.remove("show");
+
+  void box.offsetWidth;
+
+  box.classList.add("show");
+
+  box.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+
+  makeConfetti(35);
+}
+
+
+// =====================================
+// CONFETTI CELEBRATION
+// =====================================
+
+function makeConfetti(amount = 100) {
+  const symbols = ["💗", "✨", "🎉", "🌸", "⭐", "💖", "🎀"];
+
+  for (let i = 0; i < amount; i++) {
+    const piece = document.createElement("div");
+
+    piece.className = "confetti";
+
+    piece.innerText =
+      symbols[Math.floor(Math.random() * symbols.length)];
+
+    piece.style.left = Math.random() * 100 + "vw";
+
+    piece.style.fontSize =
+      (Math.random() * 15 + 12) + "px";
+
+    piece.style.animationDuration =
+      (Math.random() * 3 + 3) + "s";
+
+    document.body.appendChild(piece);
+
+    setTimeout(() => piece.remove(), 6500);
+  }
+}
+
+function celebrate() {
+  makeConfetti(120);
+  showToast("Sending unlimited birthday happiness to Zohra! 💗");
+}
+
+
+// =====================================
+// FLOATING HEART BACKGROUND
+// =====================================
+
+function createHeart() {
+  const heart = document.createElement("div");
+
+  heart.className = "heart-particle";
+
+  const symbols = ["💗", "💕", "✨", "🌸", "💖"];
+
+  heart.innerText =
+    symbols[Math.floor(Math.random() * symbols.length)];
+
+  heart.style.left = Math.random() * 100 + "vw";
+
+  heart.style.fontSize =
+    (Math.random() * 15 + 12) + "px";
+
+  heart.style.animationDuration =
+    (Math.random() * 6 + 7) + "s";
+
+  document.getElementById("particles").appendChild(heart);
+
+  setTimeout(() => heart.remove(), 14000);
+}
+
+setInterval(createHeart, 600);
+
+
+// =====================================
+// TOAST NOTIFICATION
+// =====================================
+
+let toastTimer;
+
+function showToast(message) {
+  const toast = document.getElementById("toast");
+
+  toast.innerText = message;
+
+  toast.classList.add("show");
+
+  clearTimeout(toastTimer);
+
+  toastTimer = setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
+}
+
+</script>
+
+</body>
+</html>
